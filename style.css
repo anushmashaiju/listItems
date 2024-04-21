@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css?family=Georgia');
+
+/*CSS Reset*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Georgia, sans-serif;
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    background-color: bisque;
+    background-image: linear-gradient(315deg, blue, pink);
+}
+
+.container {
+    max-width: 500px;
+    margin-top: 50px;
+}
+
+.item-header {
+    margin: 30px 0 20px;
+    display: flex;
+}
+
+.item-header input {
+    height: 40px;
+    padding: 10px;
+    font-size: 18px;
+    outline: none;
+    border: none;
+    font-family: Georgia;
+}
+
+.item-header button {
+    font-size: 18px;
+    height: 40px;
+    padding: 0 20px;
+    cursor: pointer;
+    font-family: 'sofia';
+    background-color: brown;
+    color: white;
+    border: none;
+    outline: none;
+    transition: 0.3s;
+}
+
+.item-header button:hover {
+    background-color: black;
+}
+
+.items-list {
+    text-align: left;
+    list-style: none;
+    perspective: 1000px;
+}
+
+.items-list li {
+    background-color: aquamarine;
+    background-image: linear-gradient(315deg, green, yellow);
+    padding: 10px 15px;
+    margin: 4px 0;
+    font-size: 18px;
+    font-weight: 700;
+    color: black;
+    animation: 0.3s ease-in-out;
+}
+
+@keyframes slideIn {
+    from {
+        opacity: 0;
+        transform: rotateX(60deg) translateY(0px);
+    }
+}
